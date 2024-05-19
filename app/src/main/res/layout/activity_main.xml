@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:tabMode="scrollable" />
+
+    <LinearLayout
+        android:id="@+id/webViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.89"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        app:layout_constraintVertical_bias="1.0"
+        android:orientation="horizontal" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_border"
+        android:hint="search..."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.88"
+        android:maxLines="1"
+        android:inputType="text"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"/>
+
+
+    <ImageButton
+        android:id="@+id/searchButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="-8dp"
+        android:layout_marginTop="-10dp"
+        android:backgroundTint="@color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/btn_search"
+        android:onClick="search"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/selectButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="showHideButtons"/>
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/transparent"
+        android:onClick="goToHome"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_home"
+        app:layout_constraintBottom_toTopOf="@+id/selectButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/reloadButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="@color/transparent"
+        android:onClick="reloadPage"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_reload"
+        app:layout_constraintBottom_toTopOf="@+id/selectButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="@color/transparent"
+        android:onClick="closePage"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_close"
+        app:layout_constraintBottom_toTopOf="@+id/selectButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/previousButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/transparent"
+        android:onClick="goBack"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_previous"
+        app:layout_constraintBottom_toBottomOf="@+id/selectButton"
+        app:layout_constraintEnd_toStartOf="@+id/selectButton" />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/transparent"
+        android:onClick="goNext"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_next"
+        app:layout_constraintBottom_toBottomOf="@+id/selectButton"
+        app:layout_constraintStart_toEndOf="@+id/selectButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

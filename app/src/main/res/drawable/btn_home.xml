@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="500dp" android:height="500dp">
+        <shape>
+            <gradient
+                android:angle="89"
+                android:startColor="@color/aqua1"
+                android:endColor="@color/aqua2"
+                android:gradientRadius="20dp"/>
+
+            <stroke android:width="1dp" android:color="@color/aqua2"/>
+            <corners android:radius="360dp" />
+            <padding
+                android:left="120dp" android:right="120dp"/>
+        </shape>
+    </item>
+
+    <item android:top="150dp" android:bottom="320dp" android:right="97dp"
+        android:width="165dp" android:height="30dp">
+        <rotate android:fromDegrees="-45">
+            <shape android:shape="rectangle" android:tint="@color/ui_dark_element">
+                <corners android:radius="10dp"/>
+            </shape>
+        </rotate>
+    </item>
+
+    <item android:top="150dp" android:bottom="320dp" android:left="97dp"
+        android:width="165dp" android:height="30dp">
+        <rotate android:fromDegrees="45">
+            <shape android:shape="rectangle" android:tint="@color/ui_dark_element">
+                <corners android:radius="10dp"/>
+            </shape>
+        </rotate>
+    </item>
+
+    <item android:top="205dp" android:bottom="150dp"
+        android:left="17dp"
+        android:right="215dp"
+        android:width="30dp" android:height="140dp">
+        <shape android:shape="rectangle" android:tint="@color/ui_dark_element">
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+
+    <item android:top="205dp" android:bottom="150dp"
+        android:right="17dp"
+        android:left="215dp"
+        android:width="30dp" android:height="140dp">
+        <shape android:shape="rectangle" android:tint="@color/ui_dark_element">
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+
+    <item android:top="320dp" android:bottom="150dp"
+        android:right="17dp"
+        android:left="17dp"
+
+        android:width="228dp" android:height="30dp">
+        <shape android:shape="rectangle" android:tint="@color/ui_dark_element">
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+</layer-list>

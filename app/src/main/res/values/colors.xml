@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="aqua1">#40E0D0</color>
+    <color name="aqua2">#1FAEE9</color>
+    <color name="aqua3">#6495ED</color>
+    <color name="aqua4">#5D76CB</color>
+    <color name="ui_dark_element">#124F6C</color>
+</resources>
